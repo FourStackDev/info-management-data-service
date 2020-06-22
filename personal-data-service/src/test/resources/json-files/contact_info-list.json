@@ -1,0 +1,20 @@
+[
+   {
+      "id":1,
+      "prim_contact_num":"9876543210",
+      "sec_contact_num":"8657432190",
+      "mail_id":"abcd.221@gmail.com"
+   },
+   {
+      "id":2,
+      "prim_contact_num":"9765412351",
+      "sec_contact_num":"899122431",
+      "mail_id":"defgc.221@gmail.com"
+   },
+   {
+      "id":3,
+      "prim_contact_num":"76565454864",
+      "sec_contact_num":"899122431",
+      "mail_id":"dee.221@gmail.com"
+   }
+]
