@@ -4,7 +4,7 @@
       "first_name":"Manjunath",
       "middle_name":"",
       "last_name":"HM",
-      "birth_date":"2020/10/28",
+      "birth_date":"2019/10/28",
       "gender":"Male",
       "father_name":"Munikrishnappa",
       "mother_name":"Jayalakshmamma",
@@ -62,6 +62,115 @@
             "proficiency":"beginner",
             "fluency":[
                "Read"
+            ]
+         }
+      ]
+   },
+   {
+      "id":2,
+      "first_name":"Manoj",
+      "middle_name":"",
+      "last_name":"HM",
+      "birth_date":"2018/10/27",
+      "gender":"Male",
+      "father_name":"Munikrishnappa",
+      "mother_name":"Jayalakshmamma",
+      "marital_status":"Single",
+      "contact_information":{
+         "id":2,
+         "prim_contact_num":"9765412351",
+         "sec_contact_num":"899122431",
+         "mail_id":"defgc.221@gmail.com"
+      },
+      "address":{
+         "id":2,
+         "door_number":"#22",
+         "addressLine1":"1st cross",
+         "addressLine2":"Hireballa, Jangamakote(post)",
+         "taluk":"Sidlagatta",
+         "ditrict":"Chikkaballapur",
+         "state":"Karnataka",
+         "country":"India",
+         "pincode":"562102"
+      },
+      "languages":[
+         {
+            "id":5,
+            "language_name":"Kannada",
+            "proficiency":"expert",
+            "fluency":[
+               "Read",
+               "Write",
+               "Speak"
+            ]
+         },
+         {
+            "id":6,
+            "language_name":"English",
+            "proficiency":"proficient",
+            "fluency":[
+               "Read",
+               "Write",
+               "Speak"
+            ]
+         },
+         {
+            "id":7,
+            "language_name":"Telugu",
+            "proficiency":"beginner",
+            "fluency":[
+               "Read",
+               "Speak"
+            ]
+         }
+      ]
+   },
+   {
+      "id":3,
+      "first_name":"Deepa",
+      "middle_name":"S",
+      "last_name":"Madiwalar",
+      "birth_date":"1997/09/12",
+      "gender":"Female",
+      "father_name":"Shashidhar",
+      "mother_name":"",
+      "marital_status":"Single",
+      "contact_information":{
+         "id":3,
+         "prim_contact_num":"76565454864",
+         "sec_contact_num":"899122431",
+         "mail_id":"dee.221@gmail.com"
+      },
+      "address":{
+         "id":3,
+         "door_number":"#121",
+         "addressLine1":"1st cross",
+         "addressLine2":"4th main",
+         "taluk":"Dharwad",
+         "ditrict":"Dharwad",
+         "state":"Karnataka",
+         "country":"India",
+         "pincode":"567812"
+      },
+      "languages":[
+         {
+            "id":8,
+            "language_name":"Kannada",
+            "proficiency":"expert",
+            "fluency":[
+               "Read",
+               "Write",
+               "Speak"
+            ]
+         },
+         {
+            "id":9,
+            "language_name":"English",
+            "proficiency":"proficient",
+            "fluency":[
+               "Read",
+               "Write",
+               "Speak"
             ]
          }
       ]
