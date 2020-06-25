@@ -5,6 +5,7 @@ import java.util.List;
 
 import org.fourstack.personaldataservice.codetype.FluencyType;
 import org.fourstack.personaldataservice.codetype.Proficiency;
+import org.fourstack.personaldataservice.entities.Address;
 import org.fourstack.personaldataservice.entities.Language;
 import org.springframework.data.domain.PageImpl;
 import org.springframework.data.domain.PageRequest;
@@ -88,6 +89,54 @@ public class EntityGenerator {
 			log.error("JsonProcessingException occurred while parsing the Json: languages-list.json", e);
 		}
 		return Arrays.asList(languages);
+	}
+
+	/**
+	 * Generates and Returns Address Object. Generated object will not have id.
+	 * 
+	 * @return Address Object.
+	 */
+	public static Address getAddress() {
+		Address address = new Address();
+		address.setDoorNo("#123");
+		address.setAddressLine1("1st cross, 2nd main");
+		address.setAddressLine2("pwd main road, B Narayanapura");
+		address.setTaluk("Bengauru South");
+		address.setDistrict("Bengaluru");
+		address.setState("Karnataka");
+		address.setCountry("India");
+		address.setPincode("560016");
+
+		return address;
+	}
+
+	/**
+	 * Generates and Returns Address Object with specified Id.
+	 * 
+	 * @param id Id for the Address Object
+	 * @return Address Object.
+	 */
+	public static Address getAddress(Long id) {
+		Address address = getAddress();
+		address.setId(id);
+		return address;
+	}
+
+	/**
+	 * Generates and Returns List of Address Objects. Objects List will be generated
+	 * by using the file content of address-list.json
+	 * 
+	 * @return List of Address Objects or empty List
+	 */
+	public static List<Address> getAddressList() {
+		Address[] addresses = {};
+		try {
+			addresses = mapper.readValue(CommonUtils.getFileContentUsingResource("json-files/address-list.json",
+					EntityGenerator.class.getClassLoader()), Address[].class);
+		} catch (JsonProcessingException e) {
+			log.error("JsonProcessingException occurred while parsing the Json: languages-list.json", e);
+		}
+		return Arrays.asList(addresses);
 	}
 
 }
